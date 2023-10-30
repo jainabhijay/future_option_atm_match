@@ -1,7 +1,7 @@
 import pandas as pd
 
 # Read the CSV file into a DataFrame
-df = pd.read_csv('/Users/abhijayjain/Desktop/internship/Indira Securities/F&O Prediction/call_stats/output_10%.csv')
+df = pd.read_csv('/Users/abhijayjain/Desktop/internship/Indira Securities/F&O Prediction/testing stats/backtesting /call /after cutting the cost/call_output_2%.csv')
 
 # Create a dictionary to store data for each Profit/Loss percentage
 sheets = {}
@@ -34,4 +34,4 @@ for col_name in ["p/l"]:
 final_stats_df = pd.concat(sheets.values())
 
 # Write the final DataFrame to a CSV file
-final_stats_df.to_csv('/Users/abhijayjain/Desktop/internship/Indira Securities/F&O Prediction/call_stats/stats/01call_output_10%.csv')
+final_stats_df.to_csv('/Users/abhijayjain/Desktop/internship/Indira Securities/F&O Prediction/manual_call_output_10%.csv')
