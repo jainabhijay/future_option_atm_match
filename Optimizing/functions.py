@@ -349,7 +349,7 @@ def buy_sell_execution(call_1t_optiondf, put_1t_optiondf ,merged_df,rounded_aver
     # Create a DataFrame from the trades list
     trade_df = pd.DataFrame(trades, columns=['Date', 'Entry Time', 'Entry Price', 'Exit Time', 'Exit Price', 'Trade Type'])
 
-    # Add the "Rounded Average" column to the trade_df DataFrame
+    # Add the "dddRounded Average" column to the trade_df DataFrame
     trade_df['Strike'] = rounded_average
 #------------------------
     for index, row in trade_df.iterrows():
